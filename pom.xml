@@ -17,7 +17,9 @@
 
 	<dependencies>
 
-		<!--<dependency>
+        <!--JBOSS rest easy dependencies-->
+
+		<dependency>
 			<groupId>org.jboss.resteasy</groupId>
 			<artifactId>resteasy-jaxrs</artifactId>
 			<version>2.2.1.GA</version>
@@ -28,7 +30,9 @@
 			<artifactId>resteasy-jackson-provider</artifactId>
 			<version>2.2.1.GA</version>
 		</dependency>
--->
+
+
+		<!--Jerser dependencies-->
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>

@@ -11,12 +11,12 @@ import javax.ws.rs.core.Response;
 public class JSONService {
 
 	@GET
-	@Path("/get")
+	@Path("/getProduct")
 	@Produces("application/json")
 	public Product getProductInJSON() {
 
 		Product product = new Product();
-		product.setName("iPad 3 with jersey");
+		product.setName("iPad 3 with resteasy");
 		product.setQty(999);
 		
 		return product; 
@@ -24,12 +24,13 @@ public class JSONService {
 	}
 
 	@POST
-	@Path("/post")
+	@Path("/submitProduct")
 	@Consumes("application/json")
-	public Response createProductInJSON(Product product) {
+	public String createProductInJSON(Product product) {
 
-		String result = "Product created : " + product;
-		return Response.status(201).entity(result).build();
+		String result = "REST EASY Product created : " + product.getName();
+		//return Response.status(201).entity(result).build();
+		return result;
 		
 	}
 	
